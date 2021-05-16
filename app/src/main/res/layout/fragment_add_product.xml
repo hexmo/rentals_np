@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="45dp"
+    tools:context=".View.MainApp.AddProductFragment">
+
+    <TextView
+        android:id="@+id/textView_my_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:height="40dp"
+        android:background="@color/colorPureWhite"
+        android:gravity="center"
+        android:text="@string/add_product_fragment_long_name"
+        android:textColor="@color/colorDarkBlackText"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/addProductImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/add_product_image_description"
+                android:maxWidth="1080dp"
+                android:maxHeight="1080dp"
+                android:minWidth="400dp"
+                android:minHeight="400dp"
+                android:src="@drawable/upload_placeholder" />
+
+            <TextView
+                android:id="@+id/textViewAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/add_product_upload_item_photo_text"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_item_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_product_name_text"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_item_price"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_product_price_text"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/add_product_category_text"
+                    android:textColor="@color/colorDarkBlackText"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/add_item_category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:entries="@array/product_category_array"
+                    android:minHeight="30dp"
+                    android:prompt="@string/add_product_category_text"
+                    android:spinnerMode="dialog" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_item_description"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_product_description_text"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button_add_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_button_2"
+                    android:text="@string/add_product_button_text"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

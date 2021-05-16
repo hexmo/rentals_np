@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e63946</color>
+    <color name="colorPrimaryDark">#e71d36</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--Extra colors-->
+    <color name="colorDarkBlue">#1d3557</color>
+    <color name="colorOrange">#ff9f1c</color>
+    <color name="colorWhite">#F3F3F3</color>
+    <color name="colorPureWhite">#ffffff</color>
+    <color name="colorBackgroundWhite">#FAFAFA</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <!--Text colors-->
+    <color name="colorBlackText">#747474</color>
+    <color name="colorDarkBlackText">#2C2C2C</color>
+    <color name="colorModernBlackText">#262626</color>
+    <color name="colorButtonBorder">#E1E1E1</color>
+
+    <!--  Gradient colors -->
+
+
+</resources>

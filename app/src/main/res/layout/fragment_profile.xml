@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical"
+    tools:context=".View.MainApp.ProfileFragment"
+    android:layout_marginBottom="50dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/custom_gradient">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="80dp">
+
+                    <ImageView
+                        android:id="@+id/profile_fragment_image_view"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorOrange"
+                        android:contentDescription="@string/profile_pic_description"
+                        android:src="@drawable/blank_profile_picture" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/profile_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorModernBlackText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/profile_phone_no_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorModernBlackText"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/button_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/custom_edit_profile_button"
+                    android:text="@string/profile_edit_button_text"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorModernBlackText" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView_my_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_my_product_text_view"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/profile_my_products"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_product_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

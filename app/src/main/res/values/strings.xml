@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Rentals</string>
+
+    <!--Splash Screen description-->
+    <string name="splash_screen_logo_description">This is app logo where Rentals is written with Nepalese flag.</string>
+    <string name="onboarding_image">This is image showing feature of the app.</string>
+
+    <!--Titles-->
+    <string name="first_slide_title">Snap Photos Of Unused Items</string>
+    <string name="second_slide_title">Add Description</string>
+    <string name="third_slide_title">Advertise You Item</string>
+    <string name="fourth_slide_title">Relax And Earn Money</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">You can post any unused items for rent. Our app will help you to advertise your items for renting.</string>
+    <string name="second_slide_desc">Add price and description of you items. This help you to find perfect customers for your items.</string>
+    <string name="third_slide_desc">If you have a want to earn money by renting your unused items, then add your item by following simple steps.</string>
+    <string name="fourth_slide_desc">We will handle everything for you from advertising to connecting you with customers. So, sit back and relax while earning money.</string>
+
+    <!--Onboarding Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+    <!--Login sign up-->
+    <string name="login_text">Login</string>
+    <string name="create_account">CREATE\nACCOUNT</string>
+    <string name="sign_up_text">Are you a new user? Sign up here.</string>
+    <string name="sign_in_text">Already have a account? Login here.</string>
+    <string name="sign_up_short_text">Sign Up</string>
+    <string name="sign_up_enter_name">Enter Full Name</string>
+    <string name="sign_up_enter_email">Enter Email</string>
+    <string name="sign_up_renter_pw">Re-enter Password</string>
+
+    <!--Form input text hints-->
+    <string name="form_enter_phone">Enter Phone Number</string>
+    <string name="form_enter_password">Enter Password</string>
+
+    <!-- Fragment heading -->
+    <string name="home_fragment">Home</string>
+    <string name="add_product_fragment">Add</string>
+    <string name="notifications_fragment">Notifications</string>
+    <string name="profile_fragment">Profile</string>
+
+    <!-- Common strings -->
+    <string name="loadingTest">Loading..</string>
+
+    <!-- Icons & ImageView content description -->
+    <string name="back_button_description">This is back button.</string>
+
+
+    <!-- Add product fragment texts -->
+    <string name="add_product_fragment_long_name">Add Item</string>
+    <string name="add_product_upload_item_photo_text">Click here to Upload Item Photo.</string>
+    <string name="add_product_button_text">Upload Item</string>
+    <string name="add_product_name_text">Item Name</string>
+    <string name="add_product_price_text">Price NRs/day</string>
+    <string name="add_product_description_text">Description</string>
+    <string name="add_product_category_text">Category</string>
+
+
+    <!-- Profile fragment texts -->
+    <string name="profile_pic_description">This is your profile picture.</string>
+    <string name="profile_edit_button_text">Edit Profile</string>
+    <string name="profile_my_products">My Products</string>
+
+
+    <string-array name="product_category_array">
+        <item>Vehicles and Transport</item>
+        <item>Real estate</item>
+        <item>Musical Instruments</item>
+        <item>Video, Photo and Audio</item>
+        <item>Tools and Machinery</item>
+        <item>Clothing</item>
+        <item>Electronics</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <!-- Edit Profile Activity -->
+    <string name="edit_profile_activity_heading">Edit Profile</string>
+    <string name="change_profile_photo">Change Profile Photo</string>
+    <string name="update_account_full_name">Full Name </string>
+    <string name="update_account_email">Email</string>
+    <string name="update_account_phone_no">Phone Number</string>
+    <string name="update_account_details">Update Account</string>
+
+    <!-- Other string resources -->
+    <string name="add_product_image_description">Upload image here to show what your product looks like to your customer.</string>
+    <string name="card_view_item_name">Item name</string>
+    <string name="card_view_item_price">Item price</string>
+    <string name="product_image_description">This is image of product.4</string>
+    <string name="edit_product_upload_item_photo_text">Click Here To Change Image.</string>
+    <string name="edit_product_button_text">UPDATE PRODUCT</string>
+    <string name="delete_product_button_text">Delete Product</string>
+    <string name="edit_product_activity_heading">Edit Product</string>
+    <string name="change_logout">Log out</string>
+    <string name="search_product_results_heading">Search Results</string>
+    <string name="search_hint">Search...</string>
+    <string name="contact_button_text">Contact</string>
+    <string name="nrs_500_day">NRs 500/day</string>
+    <string name="product_name">Product name</string>
+    <string name="instrument_and_machines">Instrument and machines</string>
+    <string name="along_description_view_product">along description\n Dummy description text</string>
+    <string name="home_activity_heading">All Products</string>
+    <string name="browse">Browse</string>
+    <string name="browse_by_category">Browse by category.</string>
+    <string name="product_category">Product category</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="update_password">UPDATE PASSWORD</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="reneter_new_password">Re-enter New Password</string>
+    <string name="delete_account">Delete Account</string>
+
+
+</resources>

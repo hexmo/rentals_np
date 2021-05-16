@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainApp.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/colorPureWhite"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+
+        <EditText
+            android:id="@+id/search_key_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:background="@color/colorPureWhite"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_icon_home_fragment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/ic_search"
+            android:tint="@color/colorDarkBlackText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPureWhite"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/home_activity_heading"
+        android:textColor="@color/colorDarkBlackText"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorWhite" />
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.ProductManagement.ViewProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPureWhite"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/back_button_description"
+            android:onClick="closeViewProduct"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/colorDarkBlackText" />
+
+        <TextView
+            android:id="@+id/textView_my_products"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorPureWhite"
+            android:text="@string/edit_product_activity_heading"
+            android:textColor="@color/colorDarkBlackText"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/view_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/add_product_image_description"
+                android:maxWidth="1080dp"
+                android:maxHeight="1080dp"
+                android:minWidth="400dp"
+                android:minHeight="400dp"
+                android:src="@drawable/upload_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/view_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/product_name"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/view_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nrs_500_day"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/view_product_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorModernBlackText"
+                    android:text="@string/instrument_and_machines"/>
+
+                <TextView
+                    android:id="@+id/view_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorModernBlackText"
+                    android:text="@string/along_description_view_product"/>
+
+                <TextView
+                    android:id="@+id/view_product_seller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorModernBlackText"
+                    android:text="Item listed by : Unavailable."/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_button_4"
+                    android:onClick="openPhoneDialler"
+                    android:text="@string/contact_button_text"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

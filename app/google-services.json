@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595049959023",
+    "firebase_url": "https://rentals-np.firebaseio.com",
+    "project_id": "rentals-np",
+    "storage_bucket": "rentals-np.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595049959023:android:492195b01655b979b6879a",
+        "android_client_info": {
+          "package_name": "np.com.mohitacharya.rentalsnp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595049959023-p6n2auld9nc6seabv9iv3guau1orq1aa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "np.com.mohitacharya.rentalsnp",
+            "certificate_hash": "9df40e095192b61fd25e577a21113cbe4eacf88e"
+          }
+        },
+        {
+          "client_id": "595049959023-eht6i3mdi307d9tptpvrcc0t0t4stlns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5wBF6F_KMcQEwEi63CRujaB71-sd08bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595049959023-eht6i3mdi307d9tptpvrcc0t0t4stlns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

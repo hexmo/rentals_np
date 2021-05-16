@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="np.com.ranjan.rental">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_main_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="np.com.ranjan.rental.View.UserManagement.EnterEmailActivity" />
+        <activity android:name="np.com.ranjan.rental.View.ProductManagement.ProductByCategoryActivity" />
+        <activity android:name="np.com.ranjan.rental.View.ProductManagement.ViewProductActivity" />
+        <activity android:name="np.com.ranjan.rental.View.ProductManagement.SearchResultsActivity" />
+        <activity android:name="np.com.ranjan.rental.View.ProductManagement.EditProductActivity" />
+        <activity android:name="np.com.ranjan.rental.View.UserManagement.EditProfileActivity" />
+        <activity
+            android:name="np.com.ranjan.rental.View.MainApp.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="np.com.ranjan.rental.View.UserManagement.SignUpActivity" />
+        <activity android:name="np.com.ranjan.rental.View.UserManagement.LoginActivity" />
+        <activity android:name="np.com.ranjan.rental.View.Onboarding.OnBoardingActivity" />
+        <activity android:name="np.com.ranjan.rental.View.Onboarding.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".View.Notification.MyBroadCastReceiver"
+            android:enabled="true">
+
+        </receiver>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

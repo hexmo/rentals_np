@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainApp.BrowseFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:height="40dp"
+                android:text="@string/browse_by_category"
+                android:background="@color/colorPureWhite"
+                android:gravity="center"
+                android:textColor="@color/colorDarkBlackText"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <Button
+                android:id="@+id/b_cat_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicles and Transport"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/b_cat_real"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Real Estates"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/b_cat_musical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Musical Instruments"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/b_cat_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video, Photo and Audio"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/b_cat_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tools and machinery"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/b_cat_clothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clothing"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/b_cat_electronics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electronics"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/b_cat_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:background="@drawable/category_buttons"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

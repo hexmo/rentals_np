@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.UserManagement.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPureWhite"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/back_button_description"
+            android:onClick="goBackToProfileFragment"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/colorDarkBlackText" />
+
+        <TextView
+            android:id="@+id/textView_my_products"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorPureWhite"
+            android:text="@string/edit_profile_activity_heading"
+            android:textColor="@color/colorDarkBlackText"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="60dp">
+
+                <ImageView
+                    android:id="@+id/profile_fragment_image_view"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorOrange"
+                    android:contentDescription="@string/profile_pic_description"
+                    android:onClick="changeProfilePicture"
+                    android:src="@drawable/blank_profile_picture" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="changeProfilePicture"
+                android:padding="5dp"
+                android:text="@string/change_profile_photo"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="17sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/update_full_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="@string/update_account_full_name"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/update_phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/update_account_phone_no"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/update_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/update_account_email"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_button_2"
+                android:onClick="updateAccountDetails"
+                android:text="@string/update_account_details"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_new_password"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_password_re_enter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reneter_new_password"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_button_2"
+                android:onClick="updatePassword"
+                android:text="@string/update_password"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_button_3"
+                android:onClick="accountLogout"
+                android:text="@string/change_logout"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_button"
+                android:onClick="deleteAccount"
+                android:text="@string/delete_account"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
